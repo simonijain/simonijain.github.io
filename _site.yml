@@ -1,0 +1,22 @@
+name: "simonijain"
+navbar:
+  title:
+  left:
+    - text: Home
+      href: index.html
+    - text: Research
+      href: research.html
+    - text: CV
+      href: "files/simonijain_cv.pdf"
+  right:
+    - icon: fa-envelope fa-lg
+      href: mailto:<simonij@uchicago.edu>
+    - icon: fa-github fa-lg
+      href: http://github.com/simonijain/
+    - icon: fa-twitter fa-lg
+      href: http://twitter.com/@simonijain56/
+output:
+  html_document:
+    highlight: textmate
+  theme: cosmo
+css: styles.css
