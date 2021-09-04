@@ -18,6 +18,7 @@ navbar:
 output:
   html_document:
     highlight: textmate
+    theme: cosmo
 css: styles.css
 output_dir: docs
 
