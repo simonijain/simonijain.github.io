@@ -10,7 +10,7 @@ navbar:
       href: "files/simonijain_cv.pdf"
   right:
     - icon: fa-envelope fa-lg
-      href: mailto:<simonij@uchicago.edu>
+      href: mailto:<simoni_jain@berkeley.edu>
     - icon: fa-github fa-lg
       href: http://github.com/simonijain/
     - icon: fa-twitter fa-lg

@@ -2,26 +2,27 @@
 title: "Simoni Jain"
 ---
 
-<img align="left" width=50% height=50% src="files/profile_picture_w_border.jpeg">
+<img style="float: left;" width=20% height=20% src="files/Headshot_Simoni_Jain.jpg">
 
 <p>
 <br> 
-I am a pre-doctoral fellow at the [Energy Policy Institute](https://epic.uchicago.edu/) at the University of Chicago, where I am work with Professors [Ryan Kellogg](http://kelloggryan.com/) and [Thomas Covert](https://www.tcovert.com/) on projects focused on industrial organization and contract design in the US oil and gas economy. 
+
+I am a 2nd year Phd student at University of California, Berkeley, in the [Business and Public Policy group](https://haas.berkeley.edu/bpp/) at the Haas School of Business. 
+
+<p>
+My research interests lie in labor economics, and I am currently exploring both questions that are central to labor markets in developing economies, and those that focus on US. 
 <p>
 
 <p>
-Before coming to UChicago, I was working at [J-PAL South Asia](https://www.povertyactionlab.org/page/payments-and-governance-research-program) with Profs Karthik Muralidharan, Paul Niehuas and Sandip Sukhtankar, on a portfolio of subsidy payments and governance research projects in India.
+Before moving to Berkeley, I was at UChicago, where I worked as a pre-doctoral fellow at the [Energy Policy Institute](https://epic.uchicago.edu/) with Profs Ryan Kellogg and Thomas Covert. I have also worked at [J-PAL South Asia](https://www.povertyactionlab.org/page/payments-and-governance-research-program) with Profs Karthik Muralidharan, Paul Niehuas and Sandip Sukhtankar, and Jeff Weaver. 
 <p>
 
-<p>
-I am interested in research topics at the intersection of development economics, political economy and industrial organization. Particularly, in understanding how can we map organizational structures to individual incentives and policy outcomes in the public versus private sector, with a focus on the *developing world*. 
-<p>
 
 <p>
-I graduated from UChicago Harris School of Public Policy with a Masters in Policy Analysis [(MACRM)](https://harris.uchicago.edu/academics/degrees/ma-public-policy-certificate-research-methods-macrm) in Fall 2019, where I completed the first year PhD coursework. I completed my BA (Honors) in Economics from University of Delhi.
+I graduated from University of Chicago with a Masters in Policy Analysis [(MACRM)](https://harris.uchicago.edu/academics/degrees/ma-public-policy-certificate-research-methods-macrm) in 2019. I completed my BA (Honors) in Economics from University of Delhi, India.
 <p>
 
-Please get in touch, to discuss research or recipes! 
+Please get in touch at simoni_jain@berkeley.edu, to discuss research or recipes! 
 <br>
 
 <br>

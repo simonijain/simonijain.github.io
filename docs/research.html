@@ -13,8 +13,8 @@
 
 <title>Research</title>
 
-<script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -32,8 +32,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -62,6 +62,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -82,6 +83,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -139,11 +143,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -172,8 +180,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -181,16 +189,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -234,7 +235,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -255,7 +256,7 @@ $(document).ready(function () {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="mailto:&lt;simonij@uchicago.edu&gt;">
+  <a href="mailto:&lt;simoni_jain@berkeley.edu&gt;">
     <span class="fa fa-envelope fa-lg"></span>
      
   </a>
@@ -286,20 +287,54 @@ $(document).ready(function () {
 </div>
 
 
-<p>This is a list of some of my projects undertaken with fellow researchers-in-training.<br />
-<br></p>
-<div id="covid-19-in-india-unpacking-the-second-wave-secondhand" class="section level2">
-<h2>COVID-19 in India: Unpacking the second-wave secondhand</h2>
-<div id="with-kritarth-jha-avantika-prabhakar-vasanthi-swetha" class="section level5">
+<p><br></p>
+<div id="work-in-progress" class="section level2">
+<h2>Work in progress</h2>
+<p><br></p>
+<div
+id="beyond-contracts-subcontractor-influence-on-firms-workers-and-growth"
+class="section level3">
+<h3>Beyond Contracts: Subcontractor Influence on Firms, Workers, and
+Growth</h3>
+<div id="with-vaibhav-rathi-stockholm-university"
+class="section level5">
+<h5><em>with Vaibhav Rathi, Stockholm University</em></h5>
+<p>Policy Brief: <a
+href="https://cega.berkeley.edu/research/beyond-contracts-subcontractor-influence-on-firms-workers-and-growth/">CEGA
+Summary</a></p>
+</div>
+</div>
+<div id="imperfect-markets-and-labor-law-violations-evidence-from-us"
+class="section level3">
+<h3>Imperfect markets and labor law violations: Evidence from US</h3>
+<div id="with-sebastian-puerta-uc-berkeley" class="section level5">
+<h5><em>with Sebastian Puerta, UC Berkeley</em></h5>
+<p><br></p>
+</div>
+</div>
+</div>
+<div id="currently-hibernating" class="section level2">
+<h2>Currently hibernating</h2>
+<p><br></p>
+<div id="covid-19-in-india-unpacking-the-second-wave-secondhand"
+class="section level3">
+<h3>COVID-19 in India: Unpacking the second-wave secondhand</h3>
+<div id="with-kritarth-jha-avantika-prabhakar-vasanthi-swetha"
+class="section level5">
 <h5><em>with Kritarth Jha, Avantika Prabhakar, Vasanthi Swetha</em></h5>
-<p>During the second-wave of the COVID-19 pandemic, India was hit with a devastating public health crisis, with the hospitals hitting capacity constraints and the state machinery reeling under unpreparedness. We, a group of development economics RAs with our strong networks of field surveyors in India, started <a href="https://vasanthiswetha.wixsite.com/coverified">Co-verifed</a> with the aim of verifying medical resources daily in two of the worst hit Indian states, Bihar &amp; Jharkhand. Alongside, we conducted phone surveys with the local level administrations (village leaders and maternal health workers) and doctors when vaccines started being deployed towards the end of the second wave. Our surveys were aimed at collecting information on covid testing, vaccine hesitancy, availability of medical resources, and some other issues around unemployment and migration. We also conducted in-depth qualitative interviews with maternal health workers (anganwadi sevikas) on vaccine hesitancy. We are hoping to complete the analysis and make the report and data public soon, albeit carving out time from our full time jobs has made this slower than we would like! Meanwhile, I’ll share this short <a href="https://twitter.com/kritarthjha/status/1399276609924861959">thread</a> with you that we had put together on some quick learnings about vaccine hesitancy in Bihar. <br></p>
+<p><a
+href="https://twitter.com/kritarthjha/status/1399276609924861959">Twitter
+thread</a></p>
 </div>
 </div>
-<div id="assuring-half-the-sky-evaluation-of-bihar-police-reforms" class="section level2">
-<h2>Assuring ‘Half the Sky’: Evaluation of Bihar Police Reforms</h2>
-<div id="with-mridul-joshi-mohnish-kedia-sayan-kundu-jayanti-singh" class="section level5">
-<h5><em>with Mridul Joshi, Mohnish Kedia, Sayan Kundu, Jayanti Singh</em></h5>
-<p>This project aims to evaluate Model Police Stations and All-Women Police Stations to understand its effect on women’s perception of the police force in the Indian state of Bihar. Credibility of a state agent is crucial in their ability to implement state policies and has been identified as a key bottleneck in development economics literature. We evaluate the impact of a novel policy change that improves infrastructural and technological hiatus prevalent in traditional police stations across the state, incorporates soft-skills training programs, and increases the presence of female police officers, on service take-up by women and changes in their perception brought about by institutions. We exploit the geographical variation in policy implementation and use neighbouring jurisdictions in the same district as counterfactuals to the treatment jurisdictions which were mostly in district police headquarters. Using a difference-in-difference strategy, we find small but significant improvement in women’s perception of police services, and we postulate the effect is driven by the people friendly approach adopted by these new generation police stations along with the improved infrastructure that the government has aimed to provide. The data collection for this project was supported by a public research grant and the resulting report was submitted to the Government of Bihar.</p>
+<div id="assuring-half-the-sky-evaluation-of-bihar-police-reforms"
+class="section level3">
+<h3>Assuring ‘Half the Sky’: Evaluation of Bihar Police Reforms</h3>
+<div id="with-mridul-joshi-mohnish-kedia-sayan-kundu-jayanti-singh"
+class="section level5">
+<h5><em>with Mridul Joshi, Mohnish Kedia, Sayan Kundu, Jayanti
+Singh</em></h5>
+</div>
 </div>
 </div>
 
