@@ -1,31 +1,42 @@
 ---
 title: "Research "
+output:
+  html_document:
+    css: styles.css
 ---
+
+<style>
+#header { display: none; }
+h2 { color: #6272a4; font-weight: 700; }
+.section.level3 {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+.section.level3:last-child {
+  border-bottom: none;
+}
+</style>
 
 <br>
 
 ## Work in progress
 <br>
 
+### Queueing for jobs: Worker beliefs and voluntary unemployment in emerging economies.
+
+
+### Who becomes an entrepreneur? Venture capital boom and the changing origins of Indian founders.
+
+### How are corruption norms sustained? Evidence from Ugandan public offices.
+
+##### *with Manon Delvaux, Zurich U*
+
 ### Beyond Contracts: Contractors' Influence on Firms, Workers, and Growth 
 
 ##### *with Vaibhav Rathi, Stockholm University*
 Policy Brief: [CEGA Summary](https://cega.berkeley.edu/research/beyond-contracts-subcontractor-influence-on-firms-workers-and-growth/)
 
-### Imperfect markets and labor law violations: Evidence from US 
-
-##### *with Sebastian Puerta, UC Berkeley*
 <br>
-
-## Currently hibernating 
-<br>
-
-### COVID-19 in India: Unpacking the second-wave secondhand
-
-##### *with Kritarth Jha, Avantika Prabhakar, Vasanthi Swetha*
-[Twitter thread](https://twitter.com/kritarthjha/status/1399276609924861959) 
-
-### Assuring 'Half the Sky': Evaluation of Bihar Police Reforms
-##### *with Mridul Joshi, Mohnish Kedia, Sayan Kundu, Jayanti Singh*
 
 
